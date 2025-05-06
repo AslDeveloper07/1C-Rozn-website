@@ -1,11 +1,3 @@
-const navbarToggle = document.getElementById("navbarToggle");
-const navbarLinks = document.querySelector(".nav");
-const navSpan = document.querySelectorAll(".span");
-
-navbarToggle.addEventListener("click", () => {
-  navbarLinks.classList.toggle("nav-active");
-});
-
 // Slider
 var swiper = new Swiper(".mySwiper", {
   navigation: {
@@ -72,17 +64,28 @@ var swiper = new Swiper(".companySwiper", {
   },
 });
 
-// Accordion
 let acc = document.querySelectorAll(".questions__list__content");
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-    this.children[1].classList.toggle("accortion-active");
-    var panel = this.nextElementSibling;
+    // Barcha accordionlarni yopamiz
+    acc.forEach((item) => {
+      if (item !== this) {
+        item.children[1].classList.remove("accortion-active");
+        let panel = item.nextElementSibling;
+        panel.style.maxHeight = null;
+      }
+    });
+
+    // Aktiv bo‘lsa yopamiz, yo‘q bo‘lsa ochamiz
+    let panel = this.nextElementSibling;
+    let icon = this.children[1];
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
+      icon.classList.remove("accortion-active");
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
+      icon.classList.add("accortion-active");
     }
   });
 }
