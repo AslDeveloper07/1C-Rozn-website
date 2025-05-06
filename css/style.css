@@ -121,6 +121,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 40px 0px 65px;
+  height: 700px;
 }
 
 .control__left {

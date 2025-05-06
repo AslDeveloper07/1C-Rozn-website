@@ -14,10 +14,7 @@ var swiper = new Swiper(".baseSwiper", {
   },
   slidesPerView: 1,
   spaceBetween: 20,
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
+
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -40,10 +37,7 @@ var swiper = new Swiper(".baseSwiper", {
 var swiper = new Swiper(".companySwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
+
   breakpoints: {
     640: {
       slidesPerView: 3,
