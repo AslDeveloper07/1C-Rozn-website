@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap");
+
+/* roboto-serif-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-serif-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-serif-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-serif-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-serif-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-serif-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  src: local("../assets/fonts/Gilroy-Bold.woff"),
+    url("../assets/fonts/Gilroy-Bold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Heavy ☞";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Heavy ☞"), url("Gilroy-Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Light ☞";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Light ☞"), url("Gilroy-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  src: local("../assets/fonts/Gilroy-Medium.ttf"),
+    url("../assets/fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: local("../assets/fonts/Gilroy-Regular.ttf"),
+    url("../assets/fonts/Gilroy-Regular.woff") format("woff");
+}
