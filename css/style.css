@@ -48,11 +48,11 @@ img {
 
 /* Header start  */
 .header {
-  padding: 15px 0px;
+  padding: 10px 0px;
   box-shadow: 0px 4px 24.2px 0px rgba(0, 0, 0, 0.06);
   position: fixed;
-   backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.466);
+   /* backdrop-filter: blur(20px); */
+  background-color: rgb(255, 255, 255);
   right: 0;
   width: 100%;
   z-index: 100;
@@ -61,7 +61,7 @@ img {
 .header__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+    align-items: center;
 }
 
 .nav__item {
@@ -75,7 +75,7 @@ img {
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
 }
 
 .nav__link:hover {
@@ -99,10 +99,9 @@ img {
   cursor: pointer;
 }
 
-.navbar-toggle .bar {
-  width: 24px;
-  height: 3px;
-  background-color: #2c2b2c;
+.navbar-toggle i {
+  font-size: 30px;
+  color: #3c3b42;
 }
 
 

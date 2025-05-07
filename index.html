@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="./css/responsive.css">
@@ -15,39 +16,221 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container header__container">
-      <a href="#">
-        <img class="header__logo" src="assets/images/logo.svg" alt="logo" />
-      </a>
-      <nav class="nav">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Как это работает</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Инструкции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Продукты</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">База знаний </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">О нас</a>
-          </li>
-          <li class="nav__item">
-            <button class="button header__button">Вход</button>
-          </li>
-        </ul>
-      </nav>
-      <div class="navbar-toggle" id="navbarToggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
+   <header class="header">
+      <div class="container header__container">
+        <a href="#">
+          <img class="header__logo" src="assets/images/logo.svg" alt="logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Как это работает</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Инструкции</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Продукты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">База знаний </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">О нас</a>
+            </li>
+            <li class="nav__item">
+              <button class="button header__button">Вход</button>
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar-toggle" id="navbarToggle">
+          <div class="bar">
+            <i class="ri-menu-fill"></i>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+
+    <!-- Enhanced mobile sidebar with accordion -->
+
+
+    <aside class="sidebar" id="sidebar">
+
+      <ul class="sidebar__items">
+        <li class="sidebar__item">
+            <div class="sidebar__header">
+                <a class="sidebar__link" href="#">
+                  <i class="ri-user-6-fill sidebar__icon"></i>
+                  Пользователь
+                </a>
+                <i class="ri-arrow-right-s-line sidebar__toggle-icon"></i>
+            </div>
+            <div class="sidebar__content">
+                <div class="sidebar__content-inner">
+                    <div class="sidebar__subitem">
+                        <a class="sidebar__sublink" href="#">Информация о пользователе</a>
+                    </div>
+                    <div class="sidebar__subitem">
+                        <a class="sidebar__sublink" href="#">История пользователя</a>
+                    </div>
+                    <div class="sidebar__subitem">
+                        <a class="sidebar__sublink" href="#">История пользователя</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+
+      <ul class="sidebar__items">
+          <li class="sidebar__item">
+              <div class="sidebar__header">
+                  <a class="sidebar__link" href="#">
+                    <i class="ri-dvd-ai-fill sidebar__icon"></i>
+                      Как это работает
+                  </a>
+                  <i class="ri-arrow-right-s-line sidebar__toggle-icon"></i>
+              </div>
+              <div class="sidebar__content">
+                  <div class="sidebar__content-inner">
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Основные принципы</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Видеообзор</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Частые вопросы</a>
+                      </div>
+                  </div>
+              </div>
+          </li>
+
+          <li class="sidebar__item">
+              <div class="sidebar__header">
+                  <a class="sidebar__link" href="#">
+                    <i class="ri-git-repository-fill sidebar__icon"></i>
+                      Инструкции
+                  </a>
+                  <i class="ri-arrow-right-s-line sidebar__toggle-icon"></i>
+              </div>
+              <div class="sidebar__content">
+                  <div class="sidebar__content-inner">
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Начало работы</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Руководство пользователя</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Типовые решения</a>
+                      </div>
+                  </div>
+              </div>
+          </li>
+
+          <li class="sidebar__item">
+              <div class="sidebar__header">
+                  <a class="sidebar__link" href="#">
+                    <i class="ri-shopping-bag-4-fill sidebar__icon"></i>
+                      Продукты
+                  </a>
+                  <i class="ri-arrow-right-s-line sidebar__toggle-icon"></i>
+              </div>
+              <div class="sidebar__content">
+                  <div class="sidebar__content-inner">
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Версии</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Сравнение</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Цены</a>
+                      </div>
+                  </div>
+              </div>
+          </li>
+
+          <li class="sidebar__item">
+              <div class="sidebar__header">
+                  <a class="sidebar__link" href="#">
+                    <i class="ri-pie-chart-2-fill sidebar__icon"></i>
+                      База знаний
+                  </a>
+                  <i class="ri-arrow-right-s-line sidebar__toggle-icon"></i>
+              </div>
+              <div class="sidebar__content">
+                  <div class="sidebar__content-inner">
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Статьи</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Видеоуроки</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Форум</a>
+                      </div>
+                  </div>
+              </div>
+          </li>
+          <ul class="sidebar__items">
+            <li class="sidebar__item">
+                <div class="sidebar__header">
+                    <a class="sidebar__link" href="#">
+                      <i class="ri-team-line sidebar__icon"></i>
+                      Команда
+                    </a>
+                    <i class="ri-arrow-right-s-line sidebar__toggle-icon"></i>
+                </div>
+                <div class="sidebar__content">
+                    <div class="sidebar__content-inner">
+                        <div class="sidebar__subitem">
+                            <a class="sidebar__sublink" href="#">Рабочие</a>
+                        </div>
+                        <div class="sidebar__subitem">
+                            <a class="sidebar__sublink" href="#">Коллеги</a>
+                        </div>
+                        <div class="sidebar__subitem">
+                            <a class="sidebar__sublink" href="#">Операторы  </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+          <li class="sidebar__item">
+              <div class="sidebar__header">
+                  <a class="sidebar__link" href="#">
+                    <i class="ri-information-2-fill sidebar__icon"></i>
+                      О нас
+                  </a>
+                  <i class="ri-arrow-right-s-line sidebar__toggle-icon"></i>
+              </div>
+              <div class="sidebar__content">
+                  <div class="sidebar__content-inner">
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Компания</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Контакты</a>
+                      </div>
+                      <div class="sidebar__subitem">
+                          <a class="sidebar__sublink" href="#">Вакансии</a>
+                      </div>
+                  </div>
+              </div>
+          </li>
+      </ul>
+
+      <button class="sidebar__button">
+          <i class="ri-login-box-line"></i>
+          Вход
+      </button>
+  </aside>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+
+
   <main>
     <section class="control">
       <div class="container">

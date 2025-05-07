@@ -1,0 +1,158 @@
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Enhanced sidebar styles with accordion */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    transition: left 0.3s ease-in-out;
+    padding-top: 80px;
+    overflow-y: hidden;
+}
+
+.sidebar.open {
+    left: 0;
+
+}
+
+.sidebar__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__item {
+    border-bottom: 1px solid #eee;
+
+}
+
+.sidebar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.sidebar__header:hover{
+    background-color: #48ff5717;
+}
+
+.sidebar__link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    transition: all ease-in 0.2s;
+}
+.sidebar__link:hover{
+    color: #00a00d;
+}
+
+.sidebar__icon {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.sidebar__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease;
+
+
+}
+
+.sidebar__content-inner {
+    padding: 0 25px 15px 25px;
+}
+
+.sidebar__subitem {
+    padding: 8px 0 8px 20px;
+
+}
+.sidebar__subitem:hover{
+background-color: rgba(128, 128, 128, 0.062);
+}
+
+.sidebar__sublink {
+    text-decoration: none;
+    color: #666;
+    font-weight: 410;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.2s;
+}
+
+.sidebar__sublink:hover {
+    color: #2ecc71;
+}
+
+.sidebar__item.active .sidebar__content {
+    max-height: 500px;
+}
+
+.sidebar__item.active .sidebar__toggle-icon {
+    transform: rotate(90deg);
+}
+.sidebar__toggle-icon{
+    transition: all 0.3s ease;
+
+}
+
+.sidebar__button {
+    background: linear-gradient(101deg, #43a548 -4.14%, #52e259 108.69%);
+
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 20px 20px 20px 22px;
+    width: calc(100% - 50px);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 98;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .nav {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+        font-size: 24px;
+    }
+}
