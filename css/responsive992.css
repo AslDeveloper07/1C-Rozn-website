@@ -78,4 +78,28 @@
       .base__lists {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .footer {
+        height: 504px;
+      }
+      .foot_link{
+        gap: 20px;
+      }
+      .foot {
+        display: flex;
+        padding: 40px 20px;
+        gap: 20px;
+      }
+      .foot_call {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .foot_call_btn {
+        max-width: 200px;
+      }
+
+      .last_foot{
+        padding: 20px 20px ;
+      }
+
     }
