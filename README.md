@@ -16,8 +16,6 @@ The website displays a featured product section, product grid, promotional banne
 ## ✨ Features
 
 - 💻 Fully responsive layout
-- 🛒 Product showcase section
-- 🖼️ Image-based product cards
 - 🔗 Navigation with smooth scrolling
 - 📱 Mobile-first design
 - 📧 Simple contact section
