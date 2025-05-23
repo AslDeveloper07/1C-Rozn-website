@@ -5,7 +5,7 @@
 ## 🎨 Design (Figma)
 
 You can view the original Figma design here:  
-👉 [Figma Design Link](https://www.figma.com/your-figma-design-link)
+👉 [Figma Design Link]([https://www.figma.com/your-figma-design-link](https://www.figma.com/design/0iB4EKHGmUm3vXG6zDKVXJ/rozn-(%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80)-(Copy)?node-id=0-1&p=f&t=JlttO6EOLFCJBiiK-0))
 
 > _Replace the link with your own Figma design._
 
