@@ -33,5 +33,5 @@ To view or modify this project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/rozn-savdo.git
-cd rozn-savdo
+git clone https://github.com/AslDeveloper07/1C-Rozn-website.git
+
